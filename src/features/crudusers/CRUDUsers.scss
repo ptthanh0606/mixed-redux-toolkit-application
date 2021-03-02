@@ -1,0 +1,17 @@
+$nOfCard: 4;
+$size: 100% / 4.5;
+$gap: (100% - $size * $nOfCard) / ($nOfCard - 1);
+
+.curd-users-container {
+  .users-wrapper {
+    width: 100%;
+    .user-list {
+      width: 100%;
+      align-items: flex-start;
+      display: grid;
+      grid-template-columns: $size $size $size $size;
+      row-gap: $gap;
+      column-gap: $gap;
+    }
+  }
+}
